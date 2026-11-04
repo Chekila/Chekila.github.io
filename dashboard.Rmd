@@ -43,7 +43,37 @@ reorder_by_number =
     upper = mean_prop + 1.96 * se)
 ```
 
-Column {data-width=450}
+Column {.sidebar data-width=300}
+-----------------------------------------------------------------------
+
+### About this dashboard
+
+This dashboard explores online grocery orders from the Instacart dataset, 
+loaded from the `p8105.datasets` package. The data contain 
+`r format(nrow(instacart), big.mark = ",")` items from 
+`r format(n_distinct(instacart$order_id), big.mark = ",")` orders, with one 
+order per customer.
+
+The three plots address three questions:
+
+* **What do people buy?** The most popular aisles by number of items ordered.
+* **When do people shop?** The number of orders by day of week and hour of day.
+* **Do repeat customers buy the same items?** The proportion of reordered 
+  items in an order, by the customer's order number.
+
+**Data processing.** Because the dataset is large, each plot uses a 
+summarized version of the data. The heatmap counts distinct orders rather 
+than items. For the line plot, I computed the proportion of reordered items 
+in each order and averaged these proportions within each order number. Order 
+numbers with fewer than 100 orders were removed because their estimates are 
+unstable, and order number 100 was removed because it appears to group all 
+customers with 100 or more orders. The shaded band is a 95% confidence 
+interval based on a normal approximation.
+
+**Note.** Day of week is coded 0 to 6 in the data, and the documentation does 
+not state which day corresponds to 0, so days are labeled by their codes.
+
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Top 15 aisles by number of items ordered
@@ -61,6 +91,8 @@ aisle_counts |>
     xaxis = list(title = "Number of items ordered"),
     yaxis = list(title = ""))
 ```
+
+> Fresh vegetables and fresh fruits are by far the most popular aisles, each with about 150,000 items ordered, roughly twice as many as the next aisle. Most of the top 15 aisles contain fresh or refrigerated staples.
 
 Column {data-width=550}
 -----------------------------------------------------------------------
@@ -85,7 +117,7 @@ order_times |>
     yaxis = list(title = "", autorange = "reversed", showgrid = FALSE))
 ```
 
-
+> Orders are concentrated between 10 am and 4 pm on every day of the week. Day 0 has the highest order volume, followed by Day 1, while the timing of the daily peak is similar across all days.
 
 ### Proportion of reordered items by customer's order number
 
@@ -113,3 +145,5 @@ reorder_by_number |>
     yaxis = list(title = "Proportion of reordered items", tickformat = ".0%"),
     legend = list(x = 0.75, y = 0.1))
 ```
+
+> The proportion of reordered items rises from about 42% at a customer's 4th order to over 60% by the 13th, then levels off near 80%. The narrow confidence intervals show the trend is not due to chance, although it reflects
