@@ -12,8 +12,8 @@ navbar:
       href: mailto:1533505248@qq.com
     - icon: fa-github fa-lg
       href: https://github.com/Chekila/
-#    - icon: fa-linkedin fa-lg
-#      href: https://www.linkedin.com/in/<你的LinkedIn地址>/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/xinyan-xu-9b0156449/
 output:
   html_document:
     theme: cosmo
