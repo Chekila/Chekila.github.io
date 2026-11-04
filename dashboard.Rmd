@@ -68,8 +68,24 @@ Column {data-width=550}
 ### Number of orders by day of week and hour of day
 
 ```{r}
-
+order_times |>
+  mutate(
+    text_label = str_c(
+      day_of_week, ", ", order_hour_of_day, ":00",
+      "\nNumber of orders: ", n)) |>
+  plot_ly(
+    x = ~order_hour_of_day, y = ~day_of_week, z = ~n,
+    type = "heatmap",
+    colors = "YlOrRd",
+    xgap = 2, ygap = 2,
+    text = ~text_label, hoverinfo = "text",
+    colorbar = list(title = "Orders")) |>
+  layout(
+    xaxis = list(title = "Hour of day", dtick = 2, showgrid = FALSE),
+    yaxis = list(title = "", autorange = "reversed", showgrid = FALSE))
 ```
+
+
 
 ### Proportion of reordered items by customer's order number
 
