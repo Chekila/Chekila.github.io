@@ -1,0 +1,24 @@
+---
+title: "Hi, I'm Xinyan Xu"
+---
+
+Welcome to my personal website!
+
+I am an M.S. student in **Biostatistics** (Public Health Data Science track) 
+at the Columbia University Mailman School of Public Health. I received my 
+B.S. in Applied Statistics from Shanghai Lixin University of Accounting and 
+Finance.
+
+My interests lie at the intersection of statistics, epidemiology, and 
+machine learning. I have worked on projects such as forecasting hepatitis B 
+incidence in China using ARIMA and LSTM models, and studying the association 
+between diabetes and dementia across BMI groups using large-scale data.
+
+On this site you can find:
+
+* My [resume](resume.html), with my education, research, and work experience
+* An [interactive dashboard](dashboard.html) I built using R, `plotly`, and 
+  `flexdashboard`
+
+Feel free to reach out by [email](mailto:ava202407@outlook.com) or check out my 
+work on [GitHub](https://github.com/Chekila).
