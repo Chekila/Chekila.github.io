@@ -1,0 +1,87 @@
+---
+title: "Resume"
+---
+
+## Education
+
+**Columbia University, Mailman School of Public Health** — New York, NY\
+M.S. in Biostatistics, Public Health Data Science track | 2026 – present
+
+**University of California, Berkeley** — Berkeley, CA\
+Summer Sessions Exchange Student | Jul 2024 – Aug 2024
+
+* GPA: 3.82
+* Coursework: Demography, Linguistics
+
+**Shanghai Lixin University of Accounting and Finance** — Shanghai, China\
+B.S. in Applied Statistics | Sep 2021 – Jul 2025
+
+* Ranked in the top 10% of class
+* Coursework: Machine Learning, Time Series Analysis, Applied Regression 
+  Analysis, Multivariate Statistical Analysis, Statistical Computing, 
+  Python for Business Data Mining
+
+## Research Experience
+
+**Research Project in Biostatistics and Genetic Epidemiology**\
+Supervised by Dr. Jun Liu, former researcher at the University of Oxford | 
+Oct 2025 – Dec 2025
+
+* Conducted a cross-sectional analysis of over 400,000 records to study the 
+  association between diabetes and dementia across BMI strata
+* Classified participants into BMI groups following WHO standards and prior 
+  literature, and compared associations across groups
+
+**Undergraduate Thesis** (Sole Author) | Jan 2025 – Apr 2025
+
+* *Machine Learning-Based Analysis and Forecasting of Hepatitis B in China*
+* Analyzed national hepatitis B (HBV) case data from 2011 to 2020 using time 
+  series and machine learning methods
+* Built a forecasting system combining ARIMA, LSTM, and hybrid ARIMA-LSTM 
+  models to predict future disease trends
+
+**Research Program: Probability, Statistics, and Optimization Models** | 
+Jan 2024 – Feb 2024
+
+* Received the top grade (A) across all evaluation components and was 
+  recognized as an Outstanding Participant
+* Helped teammates understand advanced mathematical statistics concepts
+
+## Publications
+
+* Xu, X. *The Core Idea of Hypothesis Testing and Its Applications.* 
+  Theoretical and Natural Science (TNS), 2024.
+* Xu, X. *Strategies for College Students' Integrity Education Based on the 
+  "Three-Wide Education" Framework.* Teachers' Weekly, 2023.
+
+## Work Experience
+
+**Data Analyst Intern**, Ipsos (Shanghai) | Aug 2024 – Oct 2024
+
+* Collected and analyzed product data to assess sales trends and customer 
+  preferences
+* Cleaned and organized large datasets using Python and Excel, and created 
+  visualizations of product sales performance
+
+**Personal Banking Intern**, Agricultural Bank of China, Hefei Branch | 
+Aug 2023 – Sep 2023
+
+* Processed and compiled business reports using Excel
+* Supported client managers in new client development and private banking 
+  client services
+
+## Leadership
+
+**Project Lead**, College Students' Innovation and Entrepreneurship 
+Competition | Apr 2022 – Apr 2024
+
+* Led a team through project research design and completion
+
+## Skills
+
+* **Programming:** R, Python
+* **Statistical methods:** Regression, time series (ARIMA), machine learning 
+  (LSTM), hypothesis testing
+* **Tools:** Git/GitHub, R Markdown, Excel
+* **Languages:** Chinese (native), English (TOEFL 100+)
+* **Certifications:** ACCA Level 1
