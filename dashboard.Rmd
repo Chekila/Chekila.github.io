@@ -49,7 +49,17 @@ Column {data-width=450}
 ### Top 15 aisles by number of items ordered
 
 ```{r}
-
+aisle_counts |>
+  mutate(
+    aisle = fct_reorder(aisle, n),
+    text_label = str_c(aisle, "\nItems ordered: ", n)) |>
+  plot_ly(
+    x = ~n, y = ~aisle, type = "bar", orientation = "h",
+    text = ~text_label, hoverinfo = "text", textposition = "none",
+    marker = list(color = "#2f5d50")) |>
+  layout(
+    xaxis = list(title = "Number of items ordered"),
+    yaxis = list(title = ""))
 ```
 
 Column {data-width=550}
