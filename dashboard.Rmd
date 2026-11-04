@@ -5,6 +5,7 @@ output:
     orientation: columns
     vertical_layout: fill
     source_code: embed
+    css: dashboard.css
     navbar:
       - { title: "Home", href: "index.html", align: left }
 ---
@@ -43,35 +44,40 @@ reorder_by_number =
     upper = mean_prop + 1.96 * se)
 ```
 
-Column {.sidebar data-width=300}
+Column {.sidebar data-width=260}
 -----------------------------------------------------------------------
 
-### About this dashboard
+This dashboard summarizes `r format(nrow(instacart), big.mark = ",")` items 
+from `r format(n_distinct(instacart$order_id), big.mark = ",")` Instacart 
+grocery orders, one order per customer, loaded from the `p8105.datasets` 
+package.
 
-This dashboard explores online grocery orders from the Instacart dataset, 
-loaded from the `p8105.datasets` package. The data contain 
-`r format(nrow(instacart), big.mark = ",")` items from 
-`r format(n_distinct(instacart$order_id), big.mark = ",")` orders, with one 
-order per customer.
+#### What do people buy?
 
-The three plots address three questions:
+Fresh vegetables and fresh fruits lead all aisles, each with about 150,000 
+items ordered, roughly twice as many as the next aisle.
 
-* **What do people buy?** The most popular aisles by number of items ordered.
-* **When do people shop?** The number of orders by day of week and hour of day.
-* **Do repeat customers buy the same items?** The proportion of reordered 
-  items in an order, by the customer's order number.
+#### When do people shop?
 
-**Data processing.** Because the dataset is large, each plot uses a 
-summarized version of the data. The heatmap counts distinct orders rather 
-than items. For the line plot, I computed the proportion of reordered items 
-in each order and averaged these proportions within each order number. Order 
-numbers with fewer than 100 orders were removed because their estimates are 
-unstable, and order number 100 was removed because it appears to group all 
-customers with 100 or more orders. The shaded band is a 95% confidence 
-interval based on a normal approximation.
+Orders peak between 10 am and 4 pm on every day of the week. Day 0 is the 
+busiest day, but the timing of the daily peak is similar across days.
 
-**Note.** Day of week is coded 0 to 6 in the data, and the documentation does 
-not state which day corresponds to 0, so days are labeled by their codes.
+#### Do repeat customers buy the same items?
+
+The share of reordered items rises from about 42% at a customer's 4th order 
+to over 60% by the 13th, then levels off near 80%. This is an association 
+across customers, not a change within the same customer.
+
+#### Methods
+
+* The heatmap counts distinct orders rather than items.
+* For the line plot, the reorder proportion was computed for each order and 
+  averaged within each order number. The band is a 95% confidence interval 
+  (mean ± 1.96 SE).
+* Order numbers with fewer than 100 orders were excluded, as was order 
+  number 100, which appears to group all customers with 100 or more orders.
+* Day of week is coded 0 to 6, and the data documentation does not specify 
+  which weekday corresponds to 0.
 
 Column {data-width=400}
 -----------------------------------------------------------------------
@@ -88,11 +94,9 @@ aisle_counts |>
     text = ~text_label, hoverinfo = "text", textposition = "none",
     marker = list(color = "#2f5d50")) |>
   layout(
-    xaxis = list(title = "Number of items ordered"),
+    xaxis = list(title = "Items ordered"),
     yaxis = list(title = ""))
 ```
-
-> Fresh vegetables and fresh fruits are by far the most popular aisles, each with about 150,000 items ordered, roughly twice as many as the next aisle. Most of the top 15 aisles contain fresh or refrigerated staples.
 
 Column {data-width=550}
 -----------------------------------------------------------------------
@@ -117,8 +121,6 @@ order_times |>
     yaxis = list(title = "", autorange = "reversed", showgrid = FALSE))
 ```
 
-> Orders are concentrated between 10 am and 4 pm on every day of the week. Day 0 has the highest order volume, followed by Day 1, while the timing of the daily peak is similar across all days.
-
 ### Proportion of reordered items by customer's order number
 
 ```{r}
@@ -142,8 +144,6 @@ reorder_by_number |>
     text = ~text_label, hoverinfo = "text") |>
   layout(
     xaxis = list(title = "Customer's order number"),
-    yaxis = list(title = "Proportion of reordered items", tickformat = ".0%"),
+    yaxis = list(title = "Reorder proportion", tickformat = ".0%"),
     legend = list(x = 0.75, y = 0.1))
 ```
-
-> The proportion of reordered items rises from about 42% at a customer's 4th order to over 60% by the 13th, then levels off near 80%. The narrow confidence intervals show the trend is not due to chance, although it reflects
