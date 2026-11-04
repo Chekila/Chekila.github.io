@@ -90,5 +90,26 @@ order_times |>
 ### Proportion of reordered items by customer's order number
 
 ```{r}
-
+reorder_by_number |>
+  mutate(
+    text_label = str_c(
+      "Order number: ", order_number,
+      "\nMean reorder proportion: ", round(mean_prop * 100, 1), "%",
+      "\n95% CI: ", round(lower * 100, 1), "% to ", round(upper * 100, 1), "%",
+      "\nNumber of orders: ", n_orders)) |>
+  plot_ly(x = ~order_number) |>
+  add_ribbons(
+    ymin = ~lower, ymax = ~upper,
+    fillcolor = "rgba(47, 93, 80, 0.2)",
+    line = list(color = "transparent"),
+    name = "95% CI", hoverinfo = "skip") |>
+  add_lines(
+    y = ~mean_prop,
+    line = list(color = "#2f5d50"),
+    name = "Mean",
+    text = ~text_label, hoverinfo = "text") |>
+  layout(
+    xaxis = list(title = "Customer's order number"),
+    yaxis = list(title = "Proportion of reordered items", tickformat = ".0%"),
+    legend = list(x = 0.75, y = 0.1))
 ```
