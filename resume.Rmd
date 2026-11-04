@@ -2,86 +2,167 @@
 title: "Resume"
 ---
 
+::: {.summary}
+Biostatistics graduate student with training in statistical modeling, time 
+series forecasting, and machine learning, and hands-on experience applying 
+these methods to epidemiological and business data.
+:::
+
 ## Education
 
-**Columbia University, Mailman School of Public Health** — New York, NY\
-M.S. in Biostatistics, Public Health Data Science track | 2026 – present
+:::: {.entry}
+::: {.entry-head}
+[Columbia University, Mailman School of Public Health]{.entry-title}
+[2026 – Present]{.entry-date}
+:::
+[M.S. in Biostatistics, Public Health Data Science track · New York, NY]{.entry-sub}
 
-**University of California, Berkeley** — Berkeley, CA\
-Summer Sessions Exchange Student | Jul 2024 – Aug 2024
+* Current coursework: Data Science I (P8105)
+::::
+
+:::: {.entry}
+::: {.entry-head}
+[University of California, Berkeley]{.entry-title}
+[Jul 2024 – Aug 2024]{.entry-date}
+:::
+[Summer Sessions Exchange Student · Berkeley, CA]{.entry-sub}
 
 * GPA: 3.82
+* Received a letter of recommendation from a UC Berkeley faculty member
 * Coursework: Demography, Linguistics
+::::
 
-**Shanghai Lixin University of Accounting and Finance** — Shanghai, China\
-B.S. in Applied Statistics | Sep 2021 – Jul 2025
+:::: {.entry}
+::: {.entry-head}
+[Shanghai Lixin University of Accounting and Finance]{.entry-title}
+[Sep 2021 – Jul 2025]{.entry-date}
+:::
+[B.S. in Applied Statistics · Shanghai, China]{.entry-sub}
 
-* Ranked in the top 10% of class
+* Ranked in the top 10% of class; received a faculty letter of recommendation 
+  for academic excellence
 * Coursework: Machine Learning, Time Series Analysis, Applied Regression 
   Analysis, Multivariate Statistical Analysis, Statistical Computing, 
   Python for Business Data Mining
+::::
 
 ## Research Experience
 
-**Research Project in Biostatistics and Genetic Epidemiology**\
-Supervised by Dr. Jun Liu, former researcher at the University of Oxford | 
-Oct 2025 – Dec 2025
+:::: {.entry}
+::: {.entry-head}
+[Research in Biostatistics and Genetic Epidemiology]{.entry-title}
+[Oct 2025 – Dec 2025]{.entry-date}
+:::
+[Supervised by Dr. Jun Liu, former researcher at the University of Oxford]{.entry-sub}
 
-* Conducted a cross-sectional analysis of over 400,000 records to study the 
-  association between diabetes and dementia across BMI strata
-* Classified participants into BMI groups following WHO standards and prior 
-  literature, and compared associations across groups
+* Completed a project on the association between diabetes and dementia across 
+  BMI strata, conducting a cross-sectional analysis of over 400,000 records
+* Classified participants into BMI groups based on WHO standards and prior 
+  literature, and compared the diabetes–dementia association across groups
+* Explored how statistical models can be combined with epidemiology, 
+  experimental design, and machine learning to study disease development
+::::
 
-**Undergraduate Thesis** (Sole Author) | Jan 2025 – Apr 2025
+:::: {.entry}
+::: {.entry-head}
+[Undergraduate Thesis]{.entry-title}
+[Jan 2025 – Apr 2025]{.entry-date}
+:::
+[*Machine Learning-Based Analysis and Forecasting of Hepatitis B in China* · Sole author]{.entry-sub}
 
-* *Machine Learning-Based Analysis and Forecasting of Hepatitis B in China*
-* Analyzed national hepatitis B (HBV) case data from 2011 to 2020 using time 
-  series and machine learning methods
+* Studied the epidemiological characteristics of hepatitis B (HBV) cases in 
+  China from 2011 to 2020 using time series and machine learning methods
 * Built a forecasting system combining ARIMA, LSTM, and hybrid ARIMA-LSTM 
   models to predict future disease trends
+* Proposed an approach for integrating traditional statistical models into 
+  modern disease forecasting
+::::
 
-**Research Program: Probability, Statistics, and Optimization Models** | 
-Jan 2024 – Feb 2024
+:::: {.entry}
+::: {.entry-head}
+[Probability, Statistics, and Optimization Models Research Program]{.entry-title}
+[Jan 2024 – Feb 2024]{.entry-date}
+:::
+[Outstanding Participant]{.entry-sub}
 
-* Received the top grade (A) across all evaluation components and was 
-  recognized as an Outstanding Participant
-* Helped teammates understand advanced mathematical statistics concepts
+* Earned the top grade (A) in every component, including participation, 
+  assignments, and the final project
+* Supported the team lead and helped teammates master advanced mathematical 
+  statistics concepts
+::::
 
 ## Publications
 
-* Xu, X. *The Core Idea of Hypothesis Testing and Its Applications.* 
-  Theoretical and Natural Science (TNS), 2024.
-* Xu, X. *Strategies for College Students' Integrity Education Based on the 
-  "Three-Wide Education" Framework.* Teachers' Weekly, 2023.
+:::: {.entry}
+::: {.entry-head}
+[The Core Idea of Hypothesis Testing and Its Applications]{.entry-title}
+[2024]{.entry-date}
+:::
+[*Theoretical and Natural Science* (TNS) · Sole author]{.entry-sub}
+
+* Examined the theory of hypothesis testing and the use of p-values, with 
+  applications to HUD display precision testing and automotive engineering
+::::
+
+:::: {.entry}
+::: {.entry-head}
+[Strategies for College Students' Integrity Education Based on the "Three-Wide Education" Framework]{.entry-title}
+[2023]{.entry-date}
+:::
+[*Teachers' Weekly* · First author]{.entry-sub}
+
+* Analyzed the current state of integrity among college students and proposed 
+  practical strategies for integrity education
+::::
 
 ## Work Experience
 
-**Data Analyst Intern**, Ipsos (Shanghai) | Aug 2024 – Oct 2024
+:::: {.entry}
+::: {.entry-head}
+[Ipsos (Shanghai)]{.entry-title}
+[Aug 2024 – Oct 2024]{.entry-date}
+:::
+[Data Analyst Intern]{.entry-sub}
 
-* Collected and analyzed product data to assess sales trends and customer 
+* Collected project data and analyzed product sales trends and customer 
   preferences
-* Cleaned and organized large datasets using Python and Excel, and created 
-  visualizations of product sales performance
+* Screened customer product reviews against coding frames
+* Cleaned and organized large datasets using Python and Excel, and visualized 
+  product sales performance
+::::
 
-**Personal Banking Intern**, Agricultural Bank of China, Hefei Branch | 
-Aug 2023 – Sep 2023
+:::: {.entry}
+::: {.entry-head}
+[Agricultural Bank of China, Hefei Branch]{.entry-title}
+[Aug 2023 – Sep 2023]{.entry-date}
+:::
+[Personal Banking Intern]{.entry-sub}
 
-* Processed and compiled business reports using Excel
-* Supported client managers in new client development and private banking 
-  client services
+* Processed system data and compiled business reports and internal bulletins 
+  using Excel
+* Supported client managers with new client development, including corporate 
+  payroll services and research on wealth management products
+* Assisted with client events and private banking client relations
+::::
 
 ## Leadership
 
-**Project Lead**, College Students' Innovation and Entrepreneurship 
-Competition | Apr 2022 – Apr 2024
+:::: {.entry}
+::: {.entry-head}
+[College Students' Innovation and Entrepreneurship Competition]{.entry-title}
+[Apr 2022 – Apr 2024]{.entry-date}
+:::
+[Project Lead]{.entry-sub}
 
-* Led a team through project research design and completion
+* Led the team through project research and helped refine the research 
+  approach, completing the project together with team members
+::::
 
 ## Skills
 
 * **Programming:** R, Python
-* **Statistical methods:** Regression, time series (ARIMA), machine learning 
-  (LSTM), hypothesis testing
-* **Tools:** Git/GitHub, R Markdown, Excel
+* **Statistical methods:** Regression, time series (ARIMA), multivariate 
+  analysis, machine learning (LSTM), hypothesis testing
+* **Tools:** Git/GitHub, R Markdown, Excel, Word, PowerPoint
 * **Languages:** Chinese (native), English (TOEFL 100+)
 * **Certifications:** ACCA Level 1

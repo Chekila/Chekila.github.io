@@ -9,11 +9,12 @@ navbar:
       href: dashboard.html
   right:
     - icon: fa-envelope fa-lg
-      href: mailto:ava202407@outlook.com
+      href: mailto:1533505248@qq.com
     - icon: fa-github fa-lg
       href: https://github.com/Chekila/
-    - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/xinyan-xu-9b0156449/
+#    - icon: fa-linkedin fa-lg
+#      href: https://www.linkedin.com/in/<你的LinkedIn地址>/
 output:
   html_document:
     theme: cosmo
+    css: styles.css

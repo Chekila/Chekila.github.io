@@ -1,24 +1,63 @@
 ---
-title: "Hi, I'm Xinyan Xu"
+pagetitle: "Xinyan Xu"
 ---
 
-Welcome to my personal website!
+::: {.hero}
+[Xinyan Xu]{.name}
+[M.S. Student in Biostatistics · Columbia University]{.tagline}
 
-I am an M.S. student in **Biostatistics** (Public Health Data Science track) 
-at the Columbia University Mailman School of Public Health. I received my 
+I am a first-year M.S. student in Biostatistics (Public Health Data Science 
+track) at the Columbia University Mailman School of Public Health. I hold a 
 B.S. in Applied Statistics from Shanghai Lixin University of Accounting and 
-Finance.
+Finance, and spent a summer studying at UC Berkeley.
 
-My interests lie at the intersection of statistics, epidemiology, and 
-machine learning. I have worked on projects such as forecasting hepatitis B 
-incidence in China using ARIMA and LSTM models, and studying the association 
-between diabetes and dementia across BMI groups using large-scale data.
+:::: {.btn-row}
+[View Resume](resume.html){.btn .btn-primary}
+[Dashboard](dashboard.html){.btn .btn-default}
+[GitHub](https://github.com/Chekila){.btn .btn-default}
+::::
+:::
 
-On this site you can find:
+## About Me
 
-* My [resume](resume.html), with my education, research, and work experience
-* An [interactive dashboard](dashboard.html) I built using R, `plotly`, and 
-  `flexdashboard`
+I am interested in using statistical and computational methods to understand 
+how diseases develop and spread, and to turn large health datasets into 
+evidence that can inform public health decisions. My background combines 
+classical statistics (regression, time series, multivariate analysis) with 
+machine learning, and I enjoy projects that bring the two together.
 
-Feel free to reach out by [email](mailto:ava202407@outlook.com) or check out my 
-work on [GitHub](https://github.com/Chekila).
+## Research Interests
+
+::: {.cards}
+
+:::: {.card}
+**Disease Forecasting**
+
+Combining traditional time series models such as ARIMA with deep learning 
+models such as LSTM to predict infectious disease trends.
+::::
+
+:::: {.card}
+**Epidemiology with Large Data**
+
+Analyzing large population datasets to study how chronic conditions, such as 
+diabetes and dementia, are related across risk groups.
+::::
+
+:::
+
+## Selected Projects
+
+* **Hepatitis B forecasting in China**: built ARIMA, LSTM, and hybrid 
+  ARIMA-LSTM models on national HBV case data from 2011 to 2020 
+  (undergraduate thesis)
+* **Diabetes and dementia across BMI strata**: cross-sectional analysis of 
+  over 400,000 records, with BMI groups defined using WHO standards
+* **Interactive dashboard**: an [interactive dashboard](dashboard.html) built 
+  with R, `plotly`, and `flexdashboard`
+
+## Get in Touch
+
+I am always happy to connect. Feel free to reach out by 
+[email](mailto:ava202407@outlook.com) or find my work on 
+[GitHub](https://github.com/Chekila).
