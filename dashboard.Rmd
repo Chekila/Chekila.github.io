@@ -1,0 +1,68 @@
+---
+title: "Instacart Shopping Patterns"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+    navbar:
+      - { title: "Home", href: "index.html", align: left }
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+
+data("instacart")
+
+aisle_counts =
+  instacart |>
+  count(aisle) |>
+  slice_max(n, n = 15)
+
+order_times =
+  instacart |>
+  distinct(order_id, order_dow, order_hour_of_day) |>
+  count(order_dow, order_hour_of_day) |>
+  mutate(day_of_week = str_c("Day ", order_dow))
+
+reorder_by_number =
+  instacart |>
+  group_by(order_id, order_number) |>
+  summarize(reorder_prop = mean(reordered), .groups = "drop") |>
+  group_by(order_number) |>
+  summarize(
+    n_orders = n(),
+    mean_prop = mean(reorder_prop),
+    se = sd(reorder_prop) / sqrt(n_orders)) |>
+  filter(n_orders >= 100, order_number < 100) |>
+  mutate(
+    lower = mean_prop - 1.96 * se,
+    upper = mean_prop + 1.96 * se)
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Top 15 aisles by number of items ordered
+
+```{r}
+
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Number of orders by day of week and hour of day
+
+```{r}
+
+```
+
+### Proportion of reordered items by customer's order number
+
+```{r}
+
+```
