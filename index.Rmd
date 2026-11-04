@@ -1,22 +1,13 @@
 ---
-pagetitle: "Xinyan Xu"
+title: "Xinyan Xu"
 ---
 
-::: {.hero}
-[Xinyan Xu]{.name}
-[M.S. Student in Biostatistics · Columbia University]{.tagline}
+*M.S. Student in Biostatistics, Columbia University*
 
 I am a first-year M.S. student in Biostatistics (Public Health Data Science 
 track) at the Columbia University Mailman School of Public Health. I hold a 
 B.S. in Applied Statistics from Shanghai Lixin University of Accounting and 
 Finance, and spent a summer studying at UC Berkeley.
-
-:::: {.btn-row}
-[View Resume](resume.html){.btn .btn-primary}
-[Dashboard](dashboard.html){.btn .btn-default}
-[GitHub](https://github.com/Chekila){.btn .btn-default}
-::::
-:::
 
 ## About Me
 
@@ -28,23 +19,12 @@ machine learning, and I enjoy projects that bring the two together.
 
 ## Research Interests
 
-::: {.cards}
-
-:::: {.card}
-**Disease Forecasting**
-
-Combining traditional time series models such as ARIMA with deep learning 
-models such as LSTM to predict infectious disease trends.
-::::
-
-:::: {.card}
-**Epidemiology with Large Data**
-
-Analyzing large population datasets to study how chronic conditions, such as 
-diabetes and dementia, are related across risk groups.
-::::
-
-:::
+* **Disease forecasting**: combining traditional time series models such as 
+  ARIMA with deep learning models such as LSTM to predict infectious disease 
+  trends
+* **Epidemiology with large data**: analyzing large population datasets to 
+  study how chronic conditions, such as diabetes and dementia, are related 
+  across risk groups
 
 ## Selected Projects
 
